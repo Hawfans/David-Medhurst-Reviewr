@@ -1,0 +1,61 @@
+<!-- Nexus 5-1 -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>ReviewR</title>
+</head>
+
+<body>
+    <section data-role="page" id="showPage" class="active">
+        <h1><b>Reviews</b></h1>
+        <ul id="list"></ul>
+    </section>
+
+
+    <section data-role="page" id="detailsPage" class="inactive">
+        <div id="details">
+            <img src=""/>
+            <h4></h4>
+            <h5></h5>
+            <p></p>
+        </div>
+    </section>
+    <section data-role="page" id="addPage" class="inactive">
+        <h1>Add Review</h1>
+        
+        <img src="" alt="" id="image">
+        <div class="form-wrapper">
+            <form action="">       
+                <label for="reviewTitle" class="title_label">Title</label>
+                <input type="text" name="reviewTitle" id="reviewTitle">
+                <label for="reviewText" class="title_label">Review</label>
+                <input type="text" name="reviewText" id="reviewText">
+                
+                <label for="reviewRating" class="title_label">Rating</label>
+                <input type="number" name="reviewRating" id="reviewRating" max=5>
+                 
+                <div class="button-wrapper">
+                        <button id="picBtn">Take Pic</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <button id="backBtn">Back</button></n>
+        <button id="addBtn">Add Review</button>
+    </footer>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
